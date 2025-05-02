@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">AndroidDev</string>
+    <string name="welcome_heading">Пожалуй, лучший фитнес трекер в ДВФУ!</string>
+    <string name="welcome_subheading">Созданный студентами</string>
+    <string name="get_started">Зарегистрироваться</string>
+    <string name="login">Уже есть аккаунт?</string>
+
+    <string name="registration_title">Регистрация</string>
+    <string name="registration_login_hint">Логин</string>
+    <string name="registration_nickname_hint">Имя или никнейм</string>
+    <string name="registration_password_hint">Пароль</string>
+    <string name="registration_confirm_password_hint">Повторите пароль</string>
+    <string name="registration_gender_title">Пол</string>
+    <string name="registration_male_radiobutton">Мужской</string>
+    <string name="registration_female_radiobutton">Женский</string>
+    <string name="registration_other_radiobutton">Другое</string>
+    <string name="registration_terms_and_conditions">Нажимая на кнопку, вы соглашаетесь с политикой конфиденциальности и обработки персональных данных, а также принимаете пользовательское соглашение</string>
+
+    <string name="login_title">Вход</string>
+    <string name="login_button_text">Войти</string>
 </resources>
