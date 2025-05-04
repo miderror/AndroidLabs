@@ -18,4 +18,10 @@
 
     <string name="login_title">Вход</string>
     <string name="login_button_text">Войти</string>
+
+    <string name="bottom_nav_activity">Активность</string>
+    <string name="bottom_nav_profile">Профиль</string>
+
+    <string name="tab_my_activity">Моя</string>
+    <string name="tab_users_activity">Пользователей</string>
 </resources>

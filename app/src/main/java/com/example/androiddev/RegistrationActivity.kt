@@ -1,5 +1,6 @@
 package com.example.androiddev
 
+import android.content.Intent
 import android.os.Bundle
 import android.text.SpannableString
 import android.text.Spanned
@@ -36,6 +37,11 @@ class RegistrationActivity : AppCompatActivity() {
 
         binding.tbRegistration.setNavigationOnClickListener {
             finish()
+        }
+
+        binding.btnRegister.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
         }
 
         val clickablePolicy = ClickableText(
