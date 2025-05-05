@@ -24,4 +24,11 @@
 
     <string name="tab_my_activity">Моя</string>
     <string name="tab_users_activity">Пользователей</string>
+
+    <string name="details_action_delete">Удалить</string>
+    <string name="details_action_send">Отправить</string>
+    <string name="details_comment_hint">Комментарий</string>
+    <string name="details_start">Старт</string>
+    <string name="details_separator">|</string>
+    <string name="details_finish">Финиш</string>
 </resources>

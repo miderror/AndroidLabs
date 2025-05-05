@@ -2,6 +2,7 @@ package com.example.androiddev
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.fragment.app.FragmentManager
 import com.example.androiddev.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -35,6 +36,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun switchToFragment(tagToShow: String, tagToHide: String) {
+        supportFragmentManager.popBackStack(null, FragmentManager.POP_BACK_STACK_INCLUSIVE)
         val fragmentToShow = supportFragmentManager.findFragmentByTag(tagToShow)
         val fragmentToHide = supportFragmentManager.findFragmentByTag(tagToHide)
 
