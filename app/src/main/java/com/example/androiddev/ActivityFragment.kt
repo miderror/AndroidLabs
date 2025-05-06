@@ -1,5 +1,6 @@
 package com.example.androiddev
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -31,6 +32,11 @@ class ActivityFragment : Fragment() {
                 else -> throw IllegalArgumentException("Invalid position")
             }
         }.attach()
+
+        binding.btnPlay.setOnClickListener {
+            val intent = Intent(requireContext(), SelectActivity::class.java)
+            startActivity(intent)
+        }
     }
 
     override fun onDestroyView() {

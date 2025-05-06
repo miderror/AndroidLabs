@@ -49,7 +49,7 @@ class MyActivityFragment : Fragment() {
         val adapter = ActivityListAdapter(sampleData) { activity ->
             requireActivity().supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, ActivityDetailsFragment.newInstance(activity))
-                .addToBackStack(null)
+                .addToBackStack("activity_details")
                 .commit()
         }
         recyclerView.adapter = adapter

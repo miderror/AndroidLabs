@@ -31,4 +31,21 @@
     <string name="details_start">Старт</string>
     <string name="details_separator">|</string>
     <string name="details_finish">Финиш</string>
+
+    <string name="profile_title">Профиль</string>
+    <string name="profile_save">Сохранить</string>
+    <string name="profile_login_hint">Логин</string>
+    <string name="profile_nickname_hint">Имя или никнейм</string>
+    <string name="profile_change_password">Изменить пароль</string>
+    <string name="profile_exit">Выйти</string>
+    <string name="profile_old_password">Старый пароль</string>
+    <string name="profile_new_password">Новый пароль</string>
+    <string name="profile_repeat_password">Повторите пароль</string>
+    <string name="profile_accept">Принять</string>
+
+    <string name="select_activity_title">Погнали? :)</string>
+    <string name="select_activity_start">Начать</string>
+    <string name="activity_bicycle">Велосипед</string>
+    <string name="activity_run">Бег</string>
+    <string name="activity_step">Шаг</string>
 </resources>

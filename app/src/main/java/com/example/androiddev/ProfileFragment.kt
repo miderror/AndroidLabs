@@ -1,10 +1,10 @@
 package com.example.androiddev
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.androiddev.databinding.FragmentProfileBinding
 
 class ProfileFragment : Fragment() {
@@ -19,6 +19,25 @@ class ProfileFragment : Fragment() {
     ): View {
         _binding = FragmentProfileBinding.inflate(inflater, container, false)
         return binding.root
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        binding.btnChangePassword.setOnClickListener {
+            parentFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, ProfilePasswordFragment.newInstance())
+                .addToBackStack("profile_password")
+                .commit()
+        }
+
+        binding.btnSave.setOnClickListener {
+            // save logic
+        }
+
+        binding.btnExit.setOnClickListener {
+            // exit logic
+        }
     }
 
     override fun onDestroyView() {
