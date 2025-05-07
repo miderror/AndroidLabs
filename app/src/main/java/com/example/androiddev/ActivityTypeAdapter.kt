@@ -17,8 +17,8 @@ class ActivityTypeAdapter(
         RecyclerView.ViewHolder(binding.root) {
 
         fun bind(item: ActivityType, position: Int) {
-            binding.tvActivityName.text = item.name
-            binding.ivActivityIcon.setImageResource(item.iconRes)
+            binding.tvActivityName.text = item.name()
+            binding.ivActivityIcon.setImageResource(R.drawable.ic_welcome)
             binding.root.background = ContextCompat.getDrawable(
                 binding.root.context,
                 if (position == selectedPosition) R.drawable.card_selected else R.drawable.card_unselected
@@ -31,6 +31,14 @@ class ActivityTypeAdapter(
                 notifyItemChanged(selectedPosition)
 
                 onItemClick(item)
+            }
+        }
+
+        private fun ActivityType.name(): String {
+            return when (this) {
+                ActivityType.CYCLING -> "Велосипед"
+                ActivityType.RUNNING -> "Бег"
+                ActivityType.WALKING -> "Шаг"
             }
         }
     }
@@ -49,6 +57,4 @@ class ActivityTypeAdapter(
     }
 
     override fun getItemCount() = items.size
-
-    data class ActivityType(val name: String, val iconRes: Int)
 }

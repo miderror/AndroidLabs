@@ -23,6 +23,7 @@ class ActivityDetailsFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         val args = arguments
+
         binding.tbActivityType.title = args?.getString("type")
         binding.tvDistance.text = args?.getString("distance")
         binding.tvDuration.text = args?.getString("duration")
